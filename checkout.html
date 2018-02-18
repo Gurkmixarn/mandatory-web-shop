@@ -6,9 +6,44 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        label,button
+        {
+            display: block;
+        }
+        textarea
+        {
+            resize: none;
+        }
+    </style>
 </head>
 <body>
+<form action="" name="myForm" onsubmit="return validateForm()" method="post">
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName">
 
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName">
+
+    <label for="emailAdress">Email Adress</label>
+    <input type="email" id="emailAdress">
+
+    <label for="phoneNumber">Phone Number</label>
+    <input type="number" id="phoneNumber">
+
+    <label for="streetAdress">Street Adress</label>
+    <input type="text" id="streetAdress">
+
+    <label for="zipCode">Zip Code</label>
+    <input type="number" id="zipCode">
+
+    <label for="city">City</label>
+    <input type="text" id="city">
+
+    <label for="comment">Comment</label>
+    <textarea name="" id="comment" cols="30" rows="10"></textarea>
+    <button>Submit!</button>
+</form>
 
 <script src="checkout.js"></script>
 </body>
